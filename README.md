@@ -34,4 +34,12 @@ create a directory for your dependencies. E.G.: `Documents/vitasdk`
 
 Lean back and wait cmake to finish. This took me 2 hours. Now vitasdk is compiled in `Documents/vitasdk/build/`
 
+
+## Installing vitasdk
+
+1. as suggested in https://henkaku.xyz/developer/ move the `vitasdk/build` to `/usr/local/vitasdk`
+2. edit `sudo nano /etc/paths` and add the location of your `vitasdk/bin` folder. In case you copied it to `usr/local/vitasdk` it would be: 
+`/usr/local/vitasdk/vitasdk/bin`
+
+
 More: TBD
