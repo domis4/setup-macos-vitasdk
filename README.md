@@ -1,3 +1,8 @@
+# IMPORTANT NOTE:
+there is an official vitasdk setup instruction on 
+https://vitasdk.org/
+which should be prefered to this.
+
 # setup-macos-vitasdk
 build, install and setup vitasdk on macOS Sierra. 
 
