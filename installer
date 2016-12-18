@@ -1,0 +1,41 @@
+#!/bin/bash
+
+WORKSPACE=~/Documents/Workspace
+VITASDK=/usr/local/vitasdk
+
+function install_dependencies {
+    brew install cmake git autoconf texinfo bison flex
+}
+
+function create_workspace {
+    mkdir $WORKSPACE
+    cd $WORKSPACE
+}
+
+function prepare_vitasdk_buildscripts {
+    git clone https://github.com/vitasdk/buildscripts.git
+    cd buildscripts
+    mkdir build
+    cd build
+    cmake ..
+}
+
+function compile_vitasdk {
+    make -j4
+}
+
+function install_vitasdk {
+    sudo mkdir $VITASDK
+    sudo cp -r vitasdk $VITASDK
+}
+
+function post_install_vitasdk {
+    echo "append /etc/paths with following line:"
+    echo "$VITASDK/vitasdk/bin"
+}
+install_dependencies
+create_workspace
+prepare_vitasdk_buildscripts
+compile_vitasdk
+install_vitasdk
+post_install_vitasdk
