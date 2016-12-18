@@ -17,8 +17,12 @@ this took on my Macbook White 2010 7,1 about 2 hours
 ### install needed packages
 - cmake
 - git
+- autoconf
+- texinfo
+- bison
+- flex
 
-`brew install cmake git`
+` brew install cmake git autoconf texinfo bison flex`
 
 create a directory for your dependencies. E.G.: `Documents/vitasdk`
 
@@ -31,6 +35,8 @@ create a directory for your dependencies. E.G.: `Documents/vitasdk`
 `cd build`
 
 `cmake ..`
+
+`make -j4`
 
 Lean back and wait cmake to finish. This took me 2 hours. Now vitasdk is compiled in `Documents/vitasdk/build/`
 
