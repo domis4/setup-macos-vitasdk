@@ -3,6 +3,10 @@ there is an official vitasdk setup instruction on
 https://vitasdk.org/
 which should be prefered to this.
 
+
+# vitasdk exports for fish shell (works on linux too)
+https://gist.github.com/domis4/0bce4407ec89c6662fa61862dd8fb248#file-config-fish
+
 # setup-macos-vitasdk
 build, install and setup vitasdk on macOS Sierra. 
 
